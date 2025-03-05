@@ -1,20 +1,20 @@
-#     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::       .
-#     ::                                                                                  ::       .
-#     ::      _____     ______   ______     __  __     __   __     ______     ______      ::       .
-#     ::     /\  __-.  /\__  _\ /\  == \   /\ \_\ \   /\ "-.\ \   /\  ___\   /\__  _\     ::       .
-#     ::     \ \ \/\ \ \/_/\ \/ \ \  __<   \ \  __ \  \ \ \-.  \  \ \  __\   \/_/\ \/     ::       .
-#     ::      \ \____-    \ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\    \ \_\     ::       .
-#     ::       \/____/     \/_/   \/_/ /_/   \/_/\/_/   \/_/ \/_/   \/_____/     \/_/     ::       .
-#     ::                                                                                  ::       .
-#     :::::::::::::::::::::::::::::::: [ HTTPS://DTRH.NET ] ::::::::::::::::::::::::::::::::       .
-#                                                                                                  .
-#          :: PROJECT: . . . . . . . . . . . . . . . . . . . . . . . . . . PrivShare               .
-#          :: VERSION: . . . . . . . . . . . . . . . . . . . . . . . . . . 0.4.0                   .
-#          :: AUTHOR:  . . . . . . . . . . . . . . . . . . . . . . . . . . KBS                     .
-#          :: CREATED: . . . . . . . . . . . . . . . . . . . . . . . . . . 2025-02-17              .
-#          :: LAST MODIFIED: . . . . . . . . . . . . . . . . . . . . . . . 2025-03-03              .
-#                                                                                                  .
-# README - PrivShare (v0.4.0)
+####  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::       
+####  ::                                                                                  ::       
+####  ::      _____     ______   ______     __  __     __   __     ______     ______      ::       
+####  ::     /\  __-.  /\__  _\ /\  == \   /\ \_\ \   /\ "-.\ \   /\  ___\   /\__  _\     ::       
+####  ::     \ \ \/\ \ \/_/\ \/ \ \  __<   \ \  __ \  \ \ \-.  \  \ \  __\   \/_/\ \/     ::       
+####  ::      \ \____-    \ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\    \ \_\     ::       
+####  ::       \/____/     \/_/   \/_/ /_/   \/_/\/_/   \/_/ \/_/   \/_____/     \/_/     ::       
+####  ::                                                                                  ::       
+####  :::::::::::::::::::::::::::::::: [ HTTPS://DTRH.NET ] ::::::::::::::::::::::::::::::::       
+####                                                                                               
+####       :: PROJECT: . . . . . . . . . . . . . . . . . . . . . . . . . . PrivShare               
+####       :: VERSION: . . . . . . . . . . . . . . . . . . . . . . . . . . 0.4.0                   
+####       :: AUTHOR:  . . . . . . . . . . . . . . . . . . . . . . . . . . KBS                     
+####       :: CREATED: . . . . . . . . . . . . . . . . . . . . . . . . . . 2025-02-17              
+####       :: LAST MODIFIED: . . . . . . . . . . . . . . . . . . . . . . . 2025-03-03              
+####                                                                                             
+#### README - PrivShare (v0.4.0)
  
 ⚙ **Overview**  
 PrivShare is a locally hosted, secure file sharing and messaging solution designed to prioritize privacy and encryption. It provides a robust system for users to securely upload and share files, engage in encrypted discussions, and manage self-destructive notes and PGP-encrypted content. With a focus on local storage and data security, it allows users to interact within a web frontend while ensuring secure access through various authentication methods and user roles. The ultimate goal is to help simplify and automate locally hosted instances of PrivShare - effectively bypassing any reliance on external services (cloud storage, pastebin, privnote). PrivShare lets you take control of your privacy, and avoid big player cloud services in favor of your own quiet and secure instance while retaining all of the tools and functionality to be expected in a file hosting service.
