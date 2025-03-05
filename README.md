@@ -1,24 +1,28 @@
+ ``` 
+      ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::       
+      ::                                                                                  ::       
+      ::      _____     ______   ______     __  __     __   __     ______     ______      ::       
+      ::     /\  __-.  /\__  _\ /\  == \   /\ \_\ \   /\ "-.\ \   /\  ___\   /\__  _\     ::       
+      ::     \ \ \/\ \ \/_/\ \/ \ \  __<   \ \  __ \  \ \ \-.  \  \ \  __\   \/_/\ \/     ::       
+      ::      \ \____-    \ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\    \ \_\     ::       
+      ::       \/____/     \/_/   \/_/ /_/   \/_/\/_/   \/_/ \/_/   \/_____/     \/_/     ::       
+      ::                                                                                  ::       
+      :::::::::::::::::::::::::::::::: [ HTTPS://DTRH.NET ] ::::::::::::::::::::::::::::::::       
 
-    ::  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::       
-    ::  ::                                                                                  ::       
-    ::  ::      _____     ______   ______     __  __     __   __     ______     ______      ::       
-    ::  ::     /\  __-.  /\__  _\ /\  == \   /\ \_\ \   /\ "-.\ \   /\  ___\   /\__  _\     ::       
-    ::  ::     \ \ \/\ \ \/_/\ \/ \ \  __<   \ \  __ \  \ \ \-.  \  \ \  __\   \/_/\ \/     ::       
-    ::  ::      \ \____-    \ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\    \ \_\     ::       
-    ::  ::       \/____/     \/_/   \/_/ /_/   \/_/\/_/   \/_/ \/_/   \/_____/     \/_/     ::       
-    ::  ::                                                                                  ::       
-    ::  :::::::::::::::::::::::::::::::: [ HTTPS://DTRH.NET ] ::::::::::::::::::::::::::::::::       
-
-       :: PROJECT: . . . . . . . . . . . . . . . . . . . . . . . . . . PrivShare               
-       :: VERSION: . . . . . . . . . . . . . . . . . . . . . . . . . . 0.4.0                   
-       :: AUTHOR:  . . . . . . . . . . . . . . . . . . . . . . . . . . KBS                     
-       :: CREATED: . . . . . . . . . . . . . . . . . . . . . . . . . . 2025-02-17              
-       :: LAST MODIFIED: . . . . . . . . . . . . . . . . . . . . . . . 2025-03-03              
+           :: PROJECT: . . . . . . . . . . . . . . . . . . . . . . . . . . PrivShare               
+           :: VERSION: . . . . . . . . . . . . . . . . . . . . . . . . . . 0.4.0                   
+           :: AUTHOR:  . . . . . . . . . . . . . . . . . . . . . . . . . . KBS                     
+           :: CREATED: . . . . . . . . . . . . . . . . . . . . . . . . . . 2025-02-17              
+           :: LAST MODIFIED: . . . . . . . . . . . . . . . . . . . . . . . 2025-03-03              
                                                                                              
- README - PrivShare (v0.4.0)
+              README - PrivShare (v0.4.0)                              admin@dtrh.net
  
 ⚙ **Overview**  
-PrivShare is a locally hosted, secure file sharing and messaging solution designed to prioritize privacy and encryption. It provides a robust system for users to securely upload and share files, engage in encrypted discussions, and manage self-destructive notes and PGP-encrypted content. With a focus on local storage and data security, it allows users to interact within a web frontend while ensuring secure access through various authentication methods and user roles. The ultimate goal is to help simplify and automate locally hosted instances of PrivShare - effectively bypassing any reliance on external services (cloud storage, pastebin, privnote). PrivShare lets you take control of your privacy, and avoid big player cloud services in favor of your own quiet and secure instance while retaining all of the tools and functionality to be expected in a file hosting service.
+PrivShare is a locally hosted, secure file sharing and messaging solution designed to prioritize privacy and encryption. It provides a robust system for users to securely upload and share files,
+engage in encrypted discussions, and manage self-destructive notes and PGP-encrypted content. With a focus on local storage and data security, it allows users to interact within a web frontend while
+ensuring secure access through various authentication methods and user roles. The ultimate goal is to help simplify and automate locally hosted instances of PrivShare - effectively bypassing any
+reliance on external services (cloud storage, pastebin, privnote). PrivShare lets you take control of your privacy, and avoid big player cloud services in favor of your own quiet and secure instance while
+retaining all of the tools and functionality to be expected in a file hosting service.
 
 📂 **Key Features**  
 - **Secure File Sharing**: Share files between users locally, without relying on cloud architecture, ensuring full control over your data.  
@@ -55,50 +59,3 @@ PrivShare is a locally hosted, secure file sharing and messaging solution design
  🌐 **Deployment**  
  - Use a WSGI server (e.g., Gunicorn, Passenger) for production.  
  - Ensure config references the correct module path if patching methods in tests.  
-
-> _____________________
-> ### [4.3.0] - 2025-13-25
-> For complete, see: **docs/CHANGELOG.md** 
-> ### Added
->- **Menu YAML Enhanced Comments:**
->  - Rewrote `menu.yaml` with detailed .bat–style commentary, making 
->    each key's purpose extremely clear. 
->  - Ensured no keys were removed, so the structure remains identical 
->    to previous versions.
->
->- **Testing & Patching Improvements:**
->  - Created a robust test approach for the `/upload` route, ensuring 
->    `.mp4` + `make_public=on` triggers `generate_video_thumbnail()` and 
->    `compress_video()`. 
->  - Introduced a function-based or package-based import structure 
->    (`privshare_app.py` or equivalent) to unify how Python sees the 
->    module for mocking calls to `subprocess.run`. 
->
->- **Randomized/cleaned leftover files in tests**:
->  - Provided an approach to randomize or remove leftover compressed 
->    or thumbnail files, guaranteeing the route triggers both 
->    `subprocess.run` calls (if none existed in prior versions).
->
->### Changed
->- **Refined `files.html`**:
->  - Unified for-else blocks to fix Jinja parse errors (`unknown tag 'else'`).
->  - Ensured the snippet “No files uploaded yet.” is displayed 
->    if the table is empty.
->
->- **Model & Config Imports**:
->  - Moved toward relative or full-package imports within `privshare_app.py`, 
-    >preventing `ModuleNotFoundError` references to `models` or `config`.
->
->### Fixed
->- **Patch Path**:
->  - Addressed the “0 calls to `subprocess.run`” by clarifying 
->    the correct dotted path for patching (now `@patch("privshare.privshare_app.subprocess.run")`).
->- **Unique Constraint**:
->  - Resolved `UNIQUE constraint failed: user.username` in tests by 
->    deleting existing `testuser` or randomizing the username each test.
->
->### Removed
->- No major features removed, only reorganized code to unify 
->  the existing structure.
- 
- 
