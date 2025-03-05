@@ -18,21 +18,32 @@
               README - PrivShare (v0.4.0)                              admin@dtrh.net
  
 ⚙ **Overview**  
-PrivShare is a locally hosted, secure file sharing and messaging solution designed to prioritize privacy and encryption. It provides a robust system for users to securely upload and share files,
-engage in encrypted discussions, and manage self-destructive notes and PGP-encrypted content. With a focus on local storage and data security, it allows users to interact within a web frontend while
-ensuring secure access through various authentication methods and user roles. The ultimate goal is to help simplify and automate locally hosted instances of PrivShare - effectively bypassing any
-reliance on external services (cloud storage, pastebin, privnote). PrivShare lets you take control of your privacy, and avoid big player cloud services in favor of your own quiet and secure instance while
-retaining all of the tools and functionality to be expected in a file hosting service.
+PrivShare is a locally hosted, secure file sharing and messaging solution designed to prioritize privacy and
+encryption. It provides a  robust system for users to  securely upload and share files, engage  in encrypted
+discussions, and manage self-destructive  notes and PGP-encrypted content. With a focus on local storage and
+data  security, it  allows  users to  interact  within a web front-end  whileensuring secure  access through
+various authentication methods and user roles. The ultimate  goal is to  help simplify and automate  locally
+hosted  instances of  PrivShare - effectively  bypassing any reliance  on external services  (cloud storage,
+pastebin, privnote). PrivShare  lets you take control of your  privacy, and avoid big player cloud  services
+in  favor of  your own quiet and  secure instance while retaining  all of the tools and functionality  to be
+expected in a file hosting service.
 
-📂 **Key Features**  
-- **Secure File Sharing**: Share files between users locally, without relying on cloud architecture, ensuring full control over your data.  
-- **Encrypted Communication**: All messages and discussions between users are fully encrypted to maintain confidentiality.  
-- **Self-Destructive Notes**: Create and share temporary notes that automatically self-destruct after being viewed, preserving privacy.  
+📂 ## **Key Features**  
+- **Secure  File  Sharing**: Share  files  between  users  locally, without  relying  on cloud architecture,
+    ensuring full control over your data.  
+- **Encrypted Communication**: All messages and  discussions between users are fully encrypted  to maintain
+    confidentiality.  
+- **Self-Destructive Notes**: Create and share temporary notes that automatically self-destruct after being
+    viewed, preserving privacy.  
 - **PGP File Encryption**: Upload and share files that are PGP encrypted for secure, private exchanges.  
-- **Role-Based Access Control**: Implement user roles with different access levels (e.g., Admin, User) to manage permissions and maintain security.  
-- **Configurable Menus**: Customize the user interface with a structured `menu.yaml`, which defines the sidebar, footer, and mobile menus—complete with icons for ease of navigation.  
-- **Automatic Compression & Thumbnails**: Support for video files to generate thumbnails and compress them automatically, ensuring quick and efficient file management.  
-- **Secure Deletion**: Only users with appropriate roles (Admins or Owners) can delete files, ensuring role compliance and minimizing accidental loss of data.
+- **Role-Based Access Control**: Implement user roles  with different access  levels (e.g., Admin, User) to
+    manage permissions and maintain security.  
+- **Configurable Menus**: Customize  the user interface  with a  structured `menu.yaml`, which  defines the
+    sidebar, footer, and mobile menus—complete with icons for ease of navigation.  
+- **Automatic Compression & Thumbnails**: Support for video files to generate thumbnails and  compress them
+    automatically, ensuring quick and efficient file management.  
+- **Secure Deletion**: Only users with appropriate roles (Admins or Owners) can delete files, ensuring role
+    compliance and minimizing accidental loss of data.
  
  🚀 **Usage**  
  1. Install and configure Python environment.  
